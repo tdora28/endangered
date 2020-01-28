@@ -1,0 +1,73 @@
+/* ========================================
+--> VARIABLES
+======================================== */
+
+:root {
+  /* FONTS */
+  --font-base: "Roboto", Arial, Helvetica, sans-serif;
+  --font-title: "Amiri", Georgia, "Times New Roman", Times, serif;
+
+  /* COLORS */
+  --dark: #000;
+  --grey: #8d8d8d;
+  --light: #f5f5f5;
+  --white: #fff;
+  --clr-home: #5a5114;
+  --clr-gorilla: #3f4754;
+  --clr-leopard: #827a6a;
+  --clr-otter: #7f5a49;
+  --clr-panda: #423538;
+  --clr-tiger: #cd8222;
+
+  /* LAYOUT */
+  /* Side padding for containers: S=16px, M=50px, L=120px */
+  --side-pad: 16px;
+}
+
+/* ========================================
+--> RESET
+======================================== */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ========================================
+--> BASE
+======================================== */
+
+body {
+  font-family: var(--font-base);
+}
