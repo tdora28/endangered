@@ -551,3 +551,18 @@ footer {
     display: flex;
   }
 }
+
+/* ========================================
+--> ABOUT
+======================================== */
+
+.disclaimer,
+.credit {
+  margin-top: 60px;
+  padding: 0 var(--side-pad);
+  text-align: center;
+}
+
+.credit a {
+  color: tomato;
+}
