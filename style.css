@@ -136,8 +136,11 @@ svg {
 ======================================== */
 
 .header {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
   align-items: center;
   width: 100%;
   height: var(--header-height);
@@ -149,7 +152,9 @@ svg {
 ======================================== */
 
 .menu {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
 }
 
@@ -211,7 +216,9 @@ svg {
 
 .search {
   position: relative;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
 }
 
@@ -297,9 +304,14 @@ svg {
 }
 
 .main-text {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: end;
   align-items: flex-end;
   height: calc(100vh - var(--main-img-size));
   margin-top: calc(var(--main-img-size) - var(--header-height));
@@ -371,7 +383,9 @@ svg {
 .animal-photo__img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: top right;
   object-position: top right;
 }
 
@@ -414,7 +428,10 @@ svg {
   display: grid;
   grid-template-columns: 1fr 40px 40px;
   grid-template-rows: 1fr;
+  -webkit-box-align: baseline;
   align-items: baseline;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
 }
 
@@ -500,15 +517,20 @@ footer {
 }
 
 .arrows {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
   align-items: center;
   height: 100%;
 }
 
 .chapter-navs {
   display: none;
+  -webkit-box-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
   align-items: center;
   height: 100%;
 }
@@ -517,7 +539,10 @@ footer {
   display: grid;
   grid-template-columns: 1fr 20px 20px;
   grid-template-rows: 1fr;
+  -webkit-box-align: baseline;
   align-items: baseline;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
 }
 
@@ -540,6 +565,8 @@ footer {
 
 @media (min-width: 700px) {
   footer {
+    height: -webkit-min-content;
+    height: -moz-min-content;
     height: min-content;
   }
 
@@ -548,6 +575,7 @@ footer {
   }
 
   .chapter-navs {
+    display: -webkit-box;
     display: flex;
   }
 }
